@@ -1,0 +1,132 @@
+/* Font style : 'Red Hat Display', */
+/*import google font*/
+@import url("");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', Courier, monospace;
+}
+
+body {
+    min-height: 100vh;
+    background: #e7f2fd;
+}
+
+header {
+    height: 140px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo_container {
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+}
+
+
+header .logo {
+    font-family: 'Red Hat Display'; 
+    font-size: clamp(1.5rem, 2vw, 2rem); 
+    margin: 0 0 15px 0;
+    letter-spacing: -0.1em;
+    /* text-shadow: -0.1ch 0.01ex 0.05ch rgba(0, 0, 0, 0.39); */
+    
+  }
+
+button {
+    color: black;
+    background-color:white ;
+    padding: 0 10px;
+    border: none;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.05); */
+    box-shadow: -0.1ch 0.01ex 0.08ch rgba(0, 0, 0, 0.39);
+}
+
+.container {
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    margin: 120px auto;
+    padding: 20px;
+}
+
+
+.filter_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+button.active {
+    background-color: black;
+    color: #e7f2fd;
+}
+
+.filterable_cards {
+    display: flex;
+    margin: 25px 0 0 0;
+    gap: 20px;
+    flex-wrap: wrap-reverse;
+}
+
+
+.card {
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: white;
+    padding: 3px;
+    /*border-radius: 8px; */
+    box-shadow: 3 3 20px rgba(0,0,0,0.9);
+    position: relative;
+}
+
+.card.hide {
+    display: none;
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    /* border-radius: 8px 8px 0 0; */
+}
+
+.card .thumbnail_label {
+    position: absolute;
+    right:30px;
+    bottom: 90px;
+    color: white;
+    font-size: clamp(1rem, 2vw, 1rem);
+    font-weight: var(--font-weight-9);
+    letter-spacing: -0.1em;
+    text-shadow: -0.1ch 0.01ex 0.08ch rgba(0, 0, 0, 0.39);
+}
+
+
+
+.card_body {
+    padding: 15px 20px 20px;
+}
+
+card_title {
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.card_text {
+    font-size: 18px;
+    color: #333;
+}
